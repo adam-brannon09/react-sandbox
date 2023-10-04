@@ -15,12 +15,11 @@ function CustomHookExample1() {
     return (
         <div>
             {data.map((post) => (
-                {/* I made the results list items so they would be bulleted */ }
-                < li key = { post.id } > { post.title }</li>
 
-    ))
-}
-        </div >
+                <li key={post.id}>{post.title}</li>
+
+            ))}
+        </div>
     )
 }
 export default CustomHookExample1
