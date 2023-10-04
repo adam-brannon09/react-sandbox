@@ -9,6 +9,8 @@ function CustomHookExample1() {
     // console.log(res)
     const { data, loading, error } = useFetch('https://jsonplaceholder.typicode.com/posts', {})
 
+    // might get an error that error is not used
+
     if (loading) return <div>Loading...</div>
 
 
